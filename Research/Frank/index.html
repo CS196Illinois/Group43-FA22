@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="plan.css">
+        <link rel="stylesheet" href="weektrack.css">
+    </head>
+    <body>
+        <script src="plan.js"></script>
+        <script src="weektrack.js"></script>
+
+        <div class="line1">
+            <button onclick="dropPlan()" class="planbtn">Workout Plans</button>
+            <div id="planContent" class="dropPlan-content">
+                <a href="#pushPullLegs">Push/Pull/Legs</a>
+                <a href="#upperLower">Upper/Lower</a>
+                <a href="#fullBody">Full Body</a>
+            </div>
+
+            <span class="weekTracker">
+                <span class="weekday">
+                    <span>
+                        <div id="workout"> Workout</div>
+                        <div id="rest"> Rest Day</div>
+                    </span>
+                    <button onclick="dayClicked(this.id, this.value)" id="monbtn" value=false>Mon</button>
+                    <button onclick="dayClicked(this.id, this.value)" id="tuebtn" value=false>Tue</button>
+                    <button onclick="dayClicked(this.id, this.value)" id="wedbtn" value=false>Wed</button>
+                    <button onclick="dayClicked(this.id, this.value)" id="fribtn" value=false>Fri</button>
+                    <button onclick="dayClicked(this.id, this.value)" id="thubtn" value=false>Thu</button>
+                    <button onclick="dayClicked(this.id, this.value)" id="satbtn" value=false>Sat</button>
+                    <button onclick="dayClicked(this.id, this.value)" id="sunbtn" value=false>Sun</button>
+                </span>
+            </span>
+        </div>
+
+
+    </body>
+</html>
