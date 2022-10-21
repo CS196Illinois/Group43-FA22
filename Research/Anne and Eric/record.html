@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>newuser</title>
+  <link href="record.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <h1>Record your exercise</h1>
+  <label for="start">Select date: </label>
+
+  <input type="date" id="start" name="trip-start"
+       value="2022-07-22"
+       min="2022-01-01" max="2023-12-31">
+
+  <label for="weight">Weight:</label>
+  <input type="text" id="weight" name="weight"><br><br>
+  <label for="calorie">calorie:</label>
+  <input type="number" id="calorie" name="calorie" min="0" max="5000"><br><br>
+  <label for="Type">type:</label>
+  <input type="text" id="type" name="type"><br><br>
+  <label for="hours">hours:</label>
+  <input type="number" id="hours" name="hours" min="0.5" max="5"><br><br>
+  <input type="submit" value="Submit">
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
