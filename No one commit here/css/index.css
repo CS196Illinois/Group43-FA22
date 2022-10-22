@@ -1,0 +1,103 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.blocks {
+    display: flex;
+    height: 100%;
+}
+
+.blocks * {
+    font-family: sans-serif;
+}
+
+.blocks__sidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
+
+.blocks__add {
+    background: #6b29c2 ;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.blocks__add:hover {
+    background: #F08080;
+}
+
+.blocks__list-item {
+    cursor: pointer;
+}
+
+.blocks__list-item--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.blocks__small-exercise {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.blocks__small-sets,
+.blocks__small-reps {
+    font-size: .8em;
+}
+
+.blocks__small-body,
+.blocks__small-reps,
+.blocks__small-sets {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.blocks__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.blocks__exercise,
+.blocks__body, 
+.blocks__reps, 
+.blocks__sets {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.blocks__exercise {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.blocks__reps,
+.blocks__sets {
+    flex-grow: 1;
+    line-height: 1.5;
+    width: 30%;
+    margin-top: 1em;
+    resize: none;
+}
+
+.blocks__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    resize: none;
+}

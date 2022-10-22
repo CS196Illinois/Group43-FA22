@@ -1,0 +1,14 @@
+.settingsbtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #3498DB;
+    color: white;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.settingsbtn:hover {
+    background-color: #2980B9;
+}

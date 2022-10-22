@@ -1,0 +1,43 @@
+.header {
+    margin: 15px;
+}
+
+.planbtn {
+    border-radius: 20px;
+    background-color: #6b29c2;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.planbtn:hover, .planbtn:focus {
+    background-color: #F08080;
+}
+
+.dropPlan {
+    position: relative;
+    display: inline-block;
+}
+
+.dropPlan-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:160x;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.dropPlan-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropPlan a:hover {background-color: #ddd;}
+
+.show {display: block;}

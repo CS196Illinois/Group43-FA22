@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- css files here -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>newuser</title>
+  <link href="loginpage.css" rel="stylesheet" type="text/css" />
+</head>
 
-    </head>
-    <body>
-        <!-- javascript files here -->
+<body background="picture/firstpage.jpg">
+  <script src="script.js"></script>
+  <H1>
+    <div class="title">Start Your Trip</div>
+    <div class="homepage-content">
+      <form action="homepage.html">
+        <label for="fname" class="labelid">UserID:</label>
+        <input type="text" id="ID" name="UserID"><br><br>
+        <label for="lname" class="labelpw">Password:</label>
+        <input type="password" id="PW" name="Password"><br><br>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+      <form action="newuser.html" class="newuserbtn">
+        <button id="newuser">New User</button>
+      </form>
+    </div>
+  </H1>
+</body>
 
-    </body>
 </html>

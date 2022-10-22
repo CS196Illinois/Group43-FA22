@@ -6,6 +6,4 @@ function dayClicked(clicked, workday) {
         document.querySelector("#" + CSS.escape(clicked)).style.backgroundColor = '#87CEFA';  
         document.getElementById(clicked).value = "false";
     }
-
-    // window.alert(clicked + " was pressed and it is a work day: " + workday);
 }

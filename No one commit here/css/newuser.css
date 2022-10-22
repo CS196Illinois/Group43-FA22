@@ -1,0 +1,82 @@
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16384c;
+}
+.container
+{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content:center;
+  align-item: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container .card
+{
+  position: relative;
+  max-width: 300px;
+  height: 420px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+.countainer .card: hover
+.contianer .card .imgBx
+{
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+.contianer .card .imgBx img
+{
+  
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

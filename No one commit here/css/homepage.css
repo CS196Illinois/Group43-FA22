@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding-top: 100px;
+  padding-bottom: 180px;
+  text-align: center;
+  background: #6b29c2;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 150px;
+  font-family: "Times New Roman";
+  font-style: italic;
+}
+
+.header h2 {
+  color: white;
+  font-size: 80px;
+}
+.header p {
+  font-size: 75px;
+  font-family: "Times New Roman";
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #f4f0f0;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+  
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #e1e0e0;
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg h3 {
+  font-size: 30px;
+  font-family: Brush Script MT;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.WorkoutMaker {
+  text-align: center;
+}
+
+.WorkoutTypes {
+  text-align: left;
+  -ms-flex: 30%;
+  flex: 30%;
+}

@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekday {
+    vertical-align: middle;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-color: #3f028f;
+}
+
+.weekday button {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #904aec;
+    color:black;
+    border: none;    
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#work {
+    padding: 10px;
+    padding-bottom: 4px;
+    color: #F08080;
+}
+
+#rest {
+    padding: 10px;
+    color: #904aec;
+}
+
+.returnbtn {
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background-color: #6b29c2;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.returnbtn:hover {
+    background: #F08080;
+}
