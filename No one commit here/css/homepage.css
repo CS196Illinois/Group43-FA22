@@ -8,7 +8,7 @@ html {
 
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
 }
 
@@ -17,7 +17,7 @@ body {
   padding-top: 100px;
   padding-bottom: 180px;
   text-align: center;
-  background: #6b29c2;
+  background: #77C66E;
   color: white;
 }
 
@@ -29,6 +29,7 @@ body {
 }
 
 .header h2 {
+  font-family: "Times New Roman";
   color: white;
   font-size: 80px;
 }
@@ -39,7 +40,7 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color:  #77C66E;
 }
 
 /* Style the navigation bar links */
@@ -50,6 +51,7 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 /* Right-aligned link */
@@ -91,21 +93,25 @@ body {
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #e1e0e0;
+  background-color: #ACDF87;
   width: 100%;
   padding: 20px;
 }
 
 .fakeimg h3 {
   font-size: 30px;
-  font-family: Brush Script MT;
+  font-family: cursive;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
-  text-align: center;
-  background: #ddd;
+  text-align: left;
+  font-size: 12px;
+}
+
+.footer h2{
+  color: rgb(74, 69, 69);
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -125,6 +131,9 @@ body {
 
 .WorkoutMaker {
   text-align: center;
+  background-color: #ACDF87;
+  width: 100%;
+  padding: 20px;
 }
 
 .WorkoutTypes {
@@ -132,3 +141,30 @@ body {
   -ms-flex: 30%;
   flex: 30%;
 }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  left: 80px;
+  position: absolute;
+  left: 52px;
+}
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
