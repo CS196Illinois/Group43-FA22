@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="attempt-to-track.css" rel="stylesheet" type="text/css" />
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You accomplished your goal " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click me when you finish your daily workout!</button></p>
+<div id="result"></div>
+<p>Click the button when you accomplish your workout goals.</p>
+<p>Close the browser tab and it will save your progress!.</p>
+
+<div id="grid-col">
+    <div class="cell">Cell</div> <div class="cell">Cell</div>
+    <div class="cell">Cell</div> <div class="cell">Cell</div>
+    <div class="cell">Cell</div> <div class="cell">Cell</div>
+  </div>
+
+
+//use this grid to make a chart that adds a cell for each time u click
+//research javascript for loops to work with the variable clickCount;
+
+</body>
+</html>
