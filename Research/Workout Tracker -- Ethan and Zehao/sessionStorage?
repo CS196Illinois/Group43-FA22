@@ -1,0 +1,36 @@
+//Session Saving
+https://www.w3schools.com/html/html5_webstorage.asp
+--> data that is stored (and then reset) every time a page is used, as opposed to local storage which is data that stored indefinitely (eg #reps done in a single workout vs a workout routine?)
+
+//from https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
+Usage of session save:
+// Save data to sessionStorage
+sessionStorage.setItem("key", "value");
+
+// Get saved data from sessionStorage
+let data = sessionStorage.getItem("key");
+
+// Remove saved data from sessionStorage
+sessionStorage.removeItem("key");
+
+// Remove all saved data from sessionStorage
+sessionStorage.clear();
+
+Could maybe implement something similar for our workout drag & drop? Eg if you're working on making a workout but then accidentally reload the page, you don't have to restart
+// Get the text field that we're going to track
+let field = document.getElementById("field");
+
+// See if we have an autosave value
+// (this will only happen if the page is accidentally refreshed)
+if (sessionStorage.getItem("autosave")) {
+  // Restore the contents of the text field
+  field.value = sessionStorage.getItem("autosave");
+}
+
+// Listen for changes in the text field
+field.addEventListener("change", () => {
+  // And save the results into the session storage object
+  sessionStorage.setItem("autosave", field.value);
+});
+
