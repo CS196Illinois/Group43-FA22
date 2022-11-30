@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/plan.css">
+    <link rel="stylesheet" href="./css/weektrack.css">
+    <link rel="stylesheet" href="./css/settings.css">
+
+</head>
+<body>
+    <script src="./js/weektrack.js"></script>
+    <script src="./js/plan.js"></script>
+    <script src="./js/index.js" type="module"></script>
+
+
+    <div class="header">
+        <button onclick="dropPlan()" class="planbtn1" type="button">Workout Plans</button>
+        <div id="planContent" class="dropPlan-content">
+            <a href="#pushPullLegs">Push/Pull/Legs</a>
+            <a href="#upperLower">Upper/Lower</a>
+            <a href="#fullBody">Full Body</a>
+        </div>
+
+        
+        <div class="weekday1">
+            <span>
+                <div id="work"> Workout</div>
+                <div id="rest"> Rest Day</div>
+            </span>
+            <button onclick="dayClicked(this.id, this.value)" id="monbtn" value=false type="button">Mon</button>
+            <button onclick="dayClicked(this.id, this.value)" id="tuebtn" value=false type="button">Tue</button>
+            <button onclick="dayClicked(this.id, this.value)" id="wedbtn" value=false type="button">Wed</button>
+            <button onclick="dayClicked(this.id, this.value)" id="thubtn" value=false type="button">Thu</button>
+            <button onclick="dayClicked(this.id, this.value)" id="fribtn" value=false type="button">Fri</button>
+            <button onclick="dayClicked(this.id, this.value)" id="satbtn" value=false type="button">Sat</button>
+            <button onclick="dayClicked(this.id, this.value)" id="sunbtn" value=false type="button">Sun</button>
+        </div>
+        <!-- <button onclick="settings()" class="settingsbtn"> + </button> -->
+        <a href="./homepage_type1.html" class="returnbtn1">Return</a>
+    </div>
+
+
+    <div class="blocks" id="app">
+        <!-- <div class="notes__sidebar">
+            <button class="notes__add" type="button">Add Note</button>
+            <div class="notes__list">
+                <div class="notes__list-item notes__list-item--selected">
+                    <div class="notes__small-title">Lecture Notes</div>
+                    <div class="notes__small-body">I learnt nothing today.</div>
+                    <div class="notes__small-updated">Thursday 3:30pm</div>
+                </div>
+            </div>
+        </div>
+        <div class="notes__preview">
+            <input class="notes__title" type="text" placeholder="Enter a title...">
+            <textarea class="notes__body">I am the notes body...</textarea>
+        </div> -->
+    </div>
+</body>
+</html>

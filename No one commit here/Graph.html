@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+
+<canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+<canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+var yValues = [150, 49, 44, 75, 15, 25, 33];
+var barColors = ["red", "green","blue","orange","brown", "yellow", "black"];
+
+new Chart("myChart1", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Weekly Workout"
+    }
+  }
+});
+
+new Chart("myChart2", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:100}}],
+    }
+  }
+});
+</script>
+
+</body>
+</html>

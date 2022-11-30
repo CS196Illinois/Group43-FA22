@@ -1,3 +1,5 @@
+/* common code */
+
 body {
     margin: 0;
     min-width: 250px;
@@ -71,23 +73,8 @@ body {
   }
   
   .close:hover {
-    background-color: #f44336;
+    background-color: #63C5da;
     color: white;
-  }
-  
-  /* Style the header */
-  .header {
-    background-color: #f44336;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-  }
-  
-  /* Clear floats after the header */
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
   }
   
   /* Style the input */
@@ -131,3 +118,49 @@ body {
     border-radius: 0;
     position: sticky;
   }
+
+/* type 1 */
+.header1 {
+  background-color: #63C5da;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* type 2 */
+.header2 {
+  background-color: #ACDF87;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* type 3 */
+.header3 {
+  background-color: #FFC594;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header3:after {
+  content: "";
+  display: table;
+  clear: both;
+}

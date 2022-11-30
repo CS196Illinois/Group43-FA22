@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel=“stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel = "stylesheet" href="style.css">
+    <title>Sports News</title>
+</head>
+
+<body>
+  <form class = "search" action = "">
+    <label for = " ">Search</label>
+    <input class = "input" type = "text">
+    <input type = "submit">
+  </form>
+  <div class = "container">
+    <ul class = "news-list"></ul>
+  </div>
+
+  <script>
+    const searchFrom = document.querySelector('.search');
+    const input = document.querySelector('.input');
+    const newslist = document.querySelector('.news-list');
+    searchFrom.addEventListener('submit', retrieve);
+    function retrieve(e) {
+      e.preventDefault()
+      const apiKey = 'bed7d37013dc4f83974415cae98046de'
+      let url = ' https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}'
+      let topic = input.value;
+      fetch(url).then((res) => {
+        return res.json()
+      }) .then((data) => {
+        console.log(data)
+        data.articles.forEach(article => {
+          let li = document.creatElement('li');
+          let a = document.creatElement('a');
+          a.setaAttribute('href', article.url);
+          a.setaAttribute('target', '_bank');
+          a.textContent = article.title;
+          li.appendChild(a);
+          newslist.appendChild(li);
+        })
+      })
+      
+    }
+  </script>
+</body>
+</html>

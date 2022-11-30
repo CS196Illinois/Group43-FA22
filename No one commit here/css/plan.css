@@ -2,19 +2,6 @@
     margin: 15px;
 }
 
-.planbtn {
-    border-radius: 20px;
-    background-color: #6b29c2;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.planbtn:hover, .planbtn:focus {
-    background-color: #F08080;
-}
 
 .dropPlan {
     position: relative;
@@ -41,3 +28,48 @@
 .dropPlan a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+/* type 1 */
+.planbtn1 {
+    border-radius: 20px;
+    background-color: #0492C2;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.planbtn1:hover, .planbtn:focus {
+    background-color: #63C5da;
+}
+
+/* type 2 */
+.planbtn2 {
+    border-radius: 20px;
+    background-color: #77C66E;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.planbtn2:hover, .planbtn:focus {
+    background-color: #ACDF87;
+}
+
+/* type 3 */
+.planbtn3 {
+    border-radius: 20px;
+    background-color: #FFA500;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.planbtn3:hover, .planbtn:focus {
+    background-color: #FFC594;
+}
