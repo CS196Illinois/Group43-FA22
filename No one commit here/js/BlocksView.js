@@ -11,12 +11,13 @@ export default class BlocksView {
                 <div class="blocks__list"></div>
             </div>
             <div class="blocks__preview">
-                <input class="blocks__exercise" type="text" placeholder="Exercise Name">
+                <input class="blocks__exercise" type="text" placeholder="Routine">
                 <div>
+                    <textarea class="blocks__body">description</textarea>
                     <textarea class="blocks__reps">description</textarea>
                     <textarea class="blocks__sets">description</textarea>
                 </div>
-                <textarea class="blocks__body">description</textarea>
+                <button class="addex"> Add Exercise </button>
             </div>
         `;
 
@@ -25,6 +26,7 @@ export default class BlocksView {
         const inpBody = this.root.querySelector(".blocks__body");
         const inpReps = this.root.querySelector(".blocks__reps");
         const inpSets = this.root.querySelector(".blocks__sets");
+        const addex = this.root.querySelector("addex");
         
         btnAddBlock.addEventListener("click", () => {
             this.onBlockAdd();
@@ -50,18 +52,18 @@ export default class BlocksView {
         return `
             <div class="blocks__list-item" data-block-id="${id}">
                 <div class="blocks__small-exercise">${exercise}</div>
+                <span class="blocks__small-body">
+                    ${body.substring(0, MAX_BODY_LENGTH)}
+                    ${body.length > MAX_BODY_LENGTH ? "..." : ""}
+                </span>
                 <span class="blocks__small-reps">
                     ${reps.substring(0, MAX_BODY_LENGTH)}
                     ${reps.length > MAX_BODY_LENGTH ? "..." : ""}
-                    <span class="blocks__small-body">
-                        ${sets.substring(0, MAX_BODY_LENGTH)}
-                        ${sets.length > MAX_BODY_LENGTH ? "..." : ""}
-                    </span>
                 </span>
-                <div class="blocks__small-body">
-                    ${body.substring(0, MAX_BODY_LENGTH)}
-                    ${body.length > MAX_BODY_LENGTH ? "..." : ""}
-                </div>
+                <span class="blocks__small-body">
+                    ${sets.substring(0, MAX_BODY_LENGTH)}
+                    ${sets.length > MAX_BODY_LENGTH ? "..." : ""}
+                </span>
 
             </div>
         `;

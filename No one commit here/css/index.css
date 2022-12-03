@@ -87,17 +87,11 @@ body {
 }
 
 .blocks__reps,
-.blocks__sets {
+.blocks__sets,
+.blocks__body {
     flex-grow: 1;
     line-height: 1.5;
     width: 30%;
     margin-top: 1em;
-    resize: none;
-}
-
-.blocks__body {
-    flex-grow: 1;
-    font-size: 1.2em;
-    line-height: 1.5;
     resize: none;
 }

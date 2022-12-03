@@ -39,8 +39,8 @@ export default class App {
             },
             onBlockAdd: () => {
                 const newBlock = {
-                    exercise: "Exercise Name",
-                    body: "Description",
+                    exercise: "Routine",
+                    body: "Exercise",
                     reps: "Reps amt",
                     sets: "Sets amt"
                 };
