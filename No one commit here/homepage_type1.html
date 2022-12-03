@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 
 <head>
-<title>Epic Workout Tracker</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="./css/homepage.css" rel="stylesheet">
-<link rel="icon" href="./picture/guy.gif" type="image/x-icon">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["imagebarchart"]});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Day', 'Finished', 'Expected'],
+        ['Mon',  60,      30],
+        ['Tue',  20,      20],
+        ['Wed',  60,       40],
+        ['Thur',  50,      40],
+        ['Fri', 100, 0],
+        ['Sat', 250, 0],
+        ['Sun', 200, 50]
+      ]);
+
+      var chart = new google.visualization.ImageBarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, {width: 1000, height: 150, min: 0});
+    }
+  </script>
+
+  <script type='text/javascript'>
+    google.charts.load('current', {'packages':['annotationchart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Workout Hour');
+      data.addColumn('string', 'Kepler title');
+      data.addColumn('string', 'Kepler text');
+      data.addRows([
+        [new Date(2022, 9, 9), 60, 'Squat', 'Knee joint hurts'],
+        [new Date(2022, 9, 10), 80, 'Pushup & Pull-up', 'Arm strong'],
+                                
+        [new Date(2022, 9, 11), 140, 'Gym', 'They are very '],
+                                
+        [new Date(2022, 9, 12), 190, 'Basketball', 'Not bad'],
+                                
+        [new Date(2022, 9, 13), 290, 'HIIT', 'Tired'],
+                              
+        [new Date(2022, 9, 14), 540, 'Sleep', 'Rest'],
+        [new Date(2022, 9, 15), 740, 'Final Exam', ':(']
+                                
+      ]);
+
+      var chart = new google.visualization.AnnotationChart(document.getElementById('chart2_div'));
+
+      var options = {
+        displayAnnotations: true
+      };
+
+      chart.draw(data, options);
+    }
+  </script>
+
+  <title>Epic Workout Tracker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/homepage.css" rel="stylesheet">
+  <link rel="icon" href="./picture/guy.gif" type="image/x-icon">
 </head>
 <body>
 
@@ -50,15 +110,17 @@
   <div class="main">
     <h2>WORKOUT SUMMARY</h2>
     <h5>10/9 -- 10/17</h5>
-    <div class="fakeimg1" style="height:200px;">Data Visualize</div>
-    <p>Some text..</p>
-    <p>Summarize the workout graph or something like that (or be like wow you did great! do x y z to improve even more for next week and keep on using our app!)</p>
-    <br>
+    <div class="fakeimg1" style="height:200px;">
+      <div id="chart_div" style="width: 500px; height: 200px;"></div>
+    </div>
+    <p> Wow you did great! Keep your schedule to improve even more for next week and keep on using our app!</p>
     <!--<h2>TITLE HEADING</h2>-->
-    <h5>(other dates)</h5>
-    <div class="fakeimg1" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>More summarizing of previous graphs (infinite list scroll type thing?)</p>
+    <h5>Total Workout Time</h5>
+    <div class="fakeimg1" style="height:300px;">
+      <div id='chart2_div' style='width: 1000px; height: 250px;'></div>
+    </div>
+    <p>: )</p>
+    <p>Wow look how much you have already done</p>
   </div>
 </div>
 <br>
