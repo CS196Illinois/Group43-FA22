@@ -1,0 +1,48 @@
+https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces
+http://underpop.online.fr/j/java/help/game-saving-basics-persistence-saving-the-game-java.html.gz
+https://crunchify.com/java-saving-and-loading-data-from-a-file-simple-production-ready-utility-for-file-readwrite-operation/
+whoops everything above is for java but same concepts should hopefully apply -^
+
+https://www.w3schools.com/html/html5_webstorage.asp#:~:text=HTML%20web%20storage%20provides%20two,the%20browser%20tab%20is%20closed)
+
+
+https://stackoverflow.com/questions/54702942/how-to-save-users-uploaded-data-in-my-html-website
+scanners would allow us to take in data from the user and implrment it into our code. doesn't guarentee a save for when they leave and come back.
+if not saved permanately we can use local storage
+
+https://blog.bitsrc.io/how-to-store-data-on-the-browser-with-javascript-9c57fc0f91b0
+session storage will work when we reload
+local storage will work when we close and open the website
+implement java script
+
+setItem(key, value) store key/value pair.
+getItem(key) gets the value by key.
+removeItem(key) remove the key and value.
+clear() delete everything from the storage.
+key(index) get the key from a given position.
+length the count of stored items.
+key the key that was changed (null if .clear() is called).
+oldValue the old value (null if the key is newly added).
+newValue the new value (null if the key is removed).
+url the url of the document where the update happened.
+storageArea either localStorage or sessionStorage object where the update happened.
+
+https://www.frevvo.com/blog/save-data-from-html-form-to-database/
+frevvo database can save the data
+A SQL query may return a single row or multiple rows, each with many columns. Thanks to the Database Connector, the form will automatically update to show you the information relevant to your request – in an easily readable format.
+In reverse, the DB Connector will “translate” data from JSON or XML to SQL to keep the database happy.
+Less data entry (and more productivity)
+Fewer errors and omissions 
+Automated connection pooling, retries, etc.
+Protection against SQL injections and other attacks 
+Complex queries such as SQL joins
+Encrypted connections for higher security
+Rapid implementation with minimal coding
+
+http://html5doctor.com/storing-data-the-simple-html5-way-and-a-few-tricks-you-might-not-have-known/
+Web Storage makes it possible to easily store arbitrary values in the browser. Storage is different from cookies in that it’s not shared with the server.
+key – the property name of the value stored
+newValue – the newly set value (duh!)
+oldValue – the previous value before being overwritten by .newValue
+url – the full url path of the origin of the storage event
+storageArea – the storage object, either localStorage or sessionStorage

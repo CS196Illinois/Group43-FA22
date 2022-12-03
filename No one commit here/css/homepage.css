@@ -1,3 +1,4 @@
+/* mian body*/
 * {
   box-sizing: border-box;
 }
@@ -8,61 +9,9 @@ html {
 
 /* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
 }
-
-/* Header/logo Title */
-.header {
-  padding-top: 100px;
-  padding-bottom: 180px;
-  text-align: center;
-  background: #6b29c2;
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 150px;
-  font-family: "Times New Roman";
-  font-style: italic;
-}
-
-.header h2 {
-  color: white;
-  font-size: 80px;
-}
-.header p {
-  font-size: 75px;
-  font-family: "Times New Roman";
-}
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #f4f0f0;
-  color: black;
-}
-
 /* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
@@ -70,7 +19,25 @@ body {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
-  
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.footer h2{
+  color: rgb(74, 69, 69);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -89,46 +56,511 @@ body {
   padding: 20px;
 }
 
+.WorkoutTypes {
+  text-align: left;
+  -ms-flex: 30%;
+  flex: 30%;
+}
+
+
+
+
+
+
+/* type 1 */
+  
+  /* Header/logo Title */
+  .header1 {
+    padding-top: 100px;
+    padding-bottom: 180px;
+    text-align: center;
+    background: #63C5da;
+    color: white;
+  }
+  
+  /* Increase the font size of the heading */
+  .header1 h1 {
+    font-size: 150px;
+    font-family: "Times New Roman";
+    font-style: italic;
+  }
+  
+  .header1 h2 {
+    font-family: "Times New Roman";
+    color: white;
+    font-size: 80px;
+  }
+  .header1 p {
+    font-size: 75px;
+    font-family: "Times New Roman";
+  }
+  /* Style the top navigation bar */
+  .navbar1 {
+    overflow: hidden;
+    background-color:  #0492C2;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar1 a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Right-aligned link */
+  .navbar1 a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar1 a:hover {
+    background-color: #f4f0f0;
+    color: black;
+  }
+
+  /* Fake image, just for this example */
+  .fakeimg1 {
+    background-color:  #63C5da;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .fakeimg1 h3 {
+    font-size: 30px;
+    font-family: cursive;
+  }
+  
+   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+   @media screen and (max-width: 400px) {
+    .navbar1 a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  .WorkoutMaker1 {
+    text-align: center;
+    background-color:  #63C5da;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .button1 {
+    background-color: #0492C2; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0492C2;
+    left: 80px;
+    position: absolute;
+    left: 52px;
+  }
+  .button1:hover {
+    background-color: #0492C2;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+/* type 2*/
+
+/* Header/logo Title */
+.header2 {
+  padding-top: 100px;
+  padding-bottom: 180px;
+  text-align: center;
+  background: #77C66E;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header2 h1 {
+  font-size: 150px;
+  font-family: "Times New Roman";
+  font-style: italic;
+}
+
+.header2 h2 {
+  font-family: "Times New Roman";
+  color: white;
+  font-size: 80px;
+}
+.header2 p {
+  font-size: 75px;
+  font-family: "Times New Roman";
+}
+/* Style the top navigation bar */
+.navbar2 {
+  overflow: hidden;
+  background-color:  #77C66E;
+}
+
+/* Style the navigation bar links */
+.navbar2 a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Right-aligned link */
+.navbar2 a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar2 a:hover {
+  background-color: #f4f0f0;
+  color: black;
+}
+
 /* Fake image, just for this example */
-.fakeimg {
-  background-color: #e1e0e0;
+.fakeimg2 {
+  background-color: #ACDF87;
   width: 100%;
   padding: 20px;
 }
 
-.fakeimg h3 {
+.fakeimg2 h3 {
   font-size: 30px;
-  font-family: Brush Script MT;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
+  font-family: cursive;
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-  .navbar a {
+  .navbar2 a {
     float: none;
     width: 100%;
   }
 }
 
-.WorkoutMaker {
+.WorkoutMaker2 {
   text-align: center;
+  background-color: #ACDF87;
+  width: 100%;
+  padding: 20px;
 }
 
-.WorkoutTypes {
-  text-align: left;
-  -ms-flex: 30%;
-  flex: 30%;
+
+.button2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  left: 80px;
+  position: absolute;
+  left: 52px;
+}
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+/* type 3 */
+  /* Header/logo Title */
+  .header3 {
+    padding-top: 100px;
+    padding-bottom: 180px;
+    text-align: center;
+    background: #FFC594;
+    color: white;
+  }
+  
+  /* Increase the font size of the heading */
+  .header3 h1 {
+    font-size: 150px;
+    font-family: "Times New Roman";
+    font-style: italic;
+  }
+  
+  .header3 h2 {
+    font-family: "Times New Roman";
+    color: white;
+    font-size: 80px;
+  }
+  .header3 p {
+    font-size: 75px;
+    font-family: "Times New Roman";
+  }
+  /* Style the top navigation bar */
+  .navbar3 {
+    overflow: hidden;
+    background-color:  #FFA500;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar3 a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Right-aligned link */
+  .navbar3 a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar3 a:hover {
+    background-color: #f4f0f0;
+    color: black;
+  }
+
+   /* Fake image, just for this example */
+   .fakeimg3 {
+    background-color:  #FFC594;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .fakeimg3 h3 {
+    font-size: 30px;
+    font-family: cursive;
+  }
+
+  .WorkoutMaker3 {
+    text-align: center;
+    background-color:  #FFC594;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .button3 {
+    background-color: #FFA500; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FFA500;
+    left: 80px;
+    position: absolute;
+    left: 52px;
+  }
+  .button3:hover {
+    background-color: #FFA500;
+    color: white;
+  }
+
+
+
+
+
+  /* goals */
+  /* common code */
+
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #63C5da;
+  color: white;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.returnbtn {
+  padding: 10px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0;
+  position: sticky;
+}
+
+/* type 1 */
+.header1 {
+background-color: #63C5da;
+padding: 30px 40px;
+color: white;
+text-align: center;
+}
+
+/* Clear floats after the header */
+.header1:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/* type 2 */
+.header2 {
+background-color: #ACDF87;
+padding: 30px 40px;
+color: white;
+text-align: center;
+}
+
+/* Clear floats after the header */
+.header2:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* type 3 */
+.header3 {
+background-color: #FFC594;
+padding: 30px 40px;
+color: white;
+text-align: center;
+}
+
+/* Clear floats after the header */
+.header3:after {
+content: "";
+display: table;
+clear: both;
 }
