@@ -12,7 +12,7 @@ export default class BlocksView {
             </div>
             <div class="blocks__preview">
                 <input class="blocks__exercise" type="text" placeholder="Routine">
-                <div>
+                <div class="newExercise">
                     <textarea class="blocks__body">description</textarea>
                     <textarea class="blocks__reps">description</textarea>
                     <textarea class="blocks__sets">description</textarea>
