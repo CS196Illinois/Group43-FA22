@@ -32,7 +32,7 @@ export default class BlocksView {
             this.onBlockAdd();
         });
 
-        [inpTitle, inpBody].forEach(inputField => {
+        [inpTitle, inpBody, inpReps, inpSets].forEach(inputField => {
             inputField.addEventListener("blur", () => {
                 const updatedTitle = inpTitle.value.trim();
                 const updatedBody = inpBody.value.trim();
