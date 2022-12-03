@@ -1,28 +1,10 @@
 h1 {
-  text-align: center;
-  position: absolute;
-  left: 40%;
-  top: 30%;
+  position: relative;
+  top: 150px;
+  left: 730px;
 }
 
-.title {
-  font-size: 1em;
-  margin-bottom: 1em;
-}
-
-.homepage-content {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#submit {
-  font-size: .8em;
-}
-
-
-/* #ID {
+#ID {
   position: absolute;
   top: 250px;
   left: 800px;
@@ -64,4 +46,4 @@ label {
   left: 50%;
   width: 100px;
   background: 
-} */
+}

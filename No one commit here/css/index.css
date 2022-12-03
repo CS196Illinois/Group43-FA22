@@ -22,7 +22,7 @@ body {
 }
 
 .blocks__add {
-    background: #6b29c2 ;
+    background: black ;
     border: none;
     border-radius: 7px;
     color: #ffffff;
@@ -35,7 +35,7 @@ body {
 }
 
 .blocks__add:hover {
-    background: #F08080;
+    background: gray;
 }
 
 .blocks__list-item {
