@@ -1,4 +1,11 @@
 body {
+  position: relative;
+  top: 260px;
   display: flexbox;
   text-align: center;
+}
+
+.starttrip {
+  margin-bottom: 20px;
+  font-size: 30px;
 }
